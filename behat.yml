@@ -1,0 +1,3 @@
+default:
+    context:
+        class: MonkeyCode\Silex\Provider\Behat\StaticProviderContext

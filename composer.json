@@ -1,0 +1,35 @@
+{
+    "name": "monkeycode/staticpageprovider",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Hucks",
+            "email": "andreas.hucks@duochrome.net"
+        }
+    ],
+    "require": {
+        "silex/silex": "1.1.*",
+        "twig/twig": "1.14.*",
+        "symfony/twig-bridge": "2.4.*"
+    },
+    "require-dev": {
+        "behat/behat": "2.5.*",
+        "behat/mink": "1.5.*",
+        "behat/mink-extension": "1.2.*",
+        "behat/mink-browserkit-driver": "1.1.*",
+        "symfony/yaml": "2.4.*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "MonkeyCode\\Silex\\Provider\\": "src/",
+            "MonkeyCode\\Silex\\Provider\\Behat\\": [
+                "features/bootstrap",
+                "features/fixtures"
+            ]
+
+        }
+    }
+}
