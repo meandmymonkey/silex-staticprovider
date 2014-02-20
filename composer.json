@@ -1,6 +1,7 @@
 {
     "name": "monkeycode/staticpageprovider",
     "license": "MIT",
+    "keywords": ["silex", "twig", "controllerprovider"],
     "authors": [
         {
             "name": "Andreas Hucks",
