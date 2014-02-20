@@ -1,8 +1,8 @@
 StaticPageControllerProvider for Silex
 ======================================
 
-A Silex ControllerProvider to allow for concise configuration
-of static pages when building small sites with Silex and Twig.
+A Silex ControllerProvider that helps reducing boilerplate code for
+static page configuration when building small sites with Silex and Twig.
 
 [![Build Status](https://travis-ci.org/meandmymonkey/silex-staticprovider.png?branch=master)](https://travis-ci.org/meandmymonkey/silex-staticprovider)
 
