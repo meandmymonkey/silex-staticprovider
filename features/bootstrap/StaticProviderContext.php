@@ -15,11 +15,21 @@ use Silex\Application;
 use Symfony\Component\HttpKernel\Client;
 use Symfony\Component\Yaml\Yaml;
 
+/**
+ * Behat context to test StaticPageControllerProvider.
+ *
+ * @author Andreas Hucks <andreas.hucks@duochrome.net>
+ */
 class StaticProviderContext extends MinkContext
 {
+    /**
+     * @var mixed A callable creating a fixture application
+     */
     private static $factory;
 
-    /** @var Application */
+    /**
+     * @var Application The fixture application
+     */
     private $app;
 
     /**

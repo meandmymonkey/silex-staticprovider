@@ -8,12 +8,27 @@ use Silex\ControllerProviderInterface;
 use Silex\Route;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * A Silex ControllerProvider to register static pages.
+ *
+ * @author Andreas Hucks <andreas.hucks@duochrome.net>
+ */
 class StaticPageControllerProvider implements ControllerProviderInterface
 {
+    /**
+     * @var array
+     */
     private $pageMap;
 
+    /**
+     * @var array
+     */
     private $cacheConfig;
 
+    /**
+     * @param array $pageMap The page configuration
+     * @param array $cacheConfig The cache configuration for all pages
+     */
     public function __construct(
         array $pageMap = array(),
         array $cacheConfig = array()
