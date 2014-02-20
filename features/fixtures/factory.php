@@ -4,7 +4,7 @@ use Silex\Application;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 
-return function($pageConfig = array(), $mountPoint = '/')
+return function()
 {
     $app = new Application();
 
